@@ -1,5 +1,6 @@
 # Traefik OIDC Relying Party
-(fork of https://github.com/Gwojda/keycloakopenid)
+
+(fork of <https://github.com/alexdelprete/traefik-oidc-relying-party>)
 
 This plugin for Traefik allows it to authenticate requests against an OpenID Provider like Zitadel, Keycloak, Authentik, etc. (I test it with Zitadel, my homelab's IAM solution). It utilizes the provider's client credentials flow to retrieve an access token, which is then set as a bearer token in the Authorization header of the incoming requests. The plugin communicates with the provider using the OpenID Connect protocol (OIDC).
 
@@ -43,8 +44,8 @@ First, enable the plugins support in your Traefik configuration file (traefik.ym
 experimental:
   plugins:
     traefik-oidc-relying-party:
-      moduleName: "github.com/alexdelprete/traefik-oidc-relying-party"
-      version: "v1.0.0"
+      moduleName: "github.com/orange-cloudavenue/traefik-oidc-relying-party"
+      version: "v0.0.1"
 ```
 
 Usage
